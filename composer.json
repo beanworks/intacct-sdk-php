@@ -1,0 +1,40 @@
+{
+    "name": "beanworks/intacct-sdk-php",
+    "description": "Beanworks fork of Sage Intacct SDK for PHP",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sage Intacct, Inc.",
+            "homepage": "http://www.intacct.com"
+        }
+    ],
+    "support": {
+        "forum": "https://developer.intacct.com"
+    },
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp/guzzle": "^6.2.1",
+        "ramsey/uuid": "^3.5.0",
+        "psr/log": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.4",
+        "monolog/monolog": "1.21.0",
+        "sami/sami": "v3.3.*",
+        "mikey179/vfsStream": "v1.6.4"
+    },
+    "suggest": {
+        "monolog/monolog": "Allows more advanced logging of the application flow"
+    },
+    "autoload": {
+        "psr-4": {
+            "BWIntacct\\": "src/BWIntacct/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BWIntacct\\Tests\\": "test/"
+        }
+    }
+}
